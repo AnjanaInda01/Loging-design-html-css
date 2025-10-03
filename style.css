@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  width: 500px;
 }
 .log-box {
   height: 100%;
@@ -113,7 +113,7 @@ body {
   width: 20px;
   height: auto;
 }
-.footer-text{
+.footer-text {
   font-size: 14px;
 }
 .footer-text a {
@@ -121,15 +121,15 @@ body {
   color: #606060;
   font-weight: 600;
 }
+
 /*for mobile*/
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .login-section {
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
   }
   .log-box {
+    width: 100%;
     justify-content: center;
     align-items: center;
     order: 1;
@@ -138,27 +138,41 @@ body {
     height: auto;
     padding: 60px;
   }
+  .log-box h2 {
+    font-size: 20px;
+  }
   .logo {
-    content: url('Assets/mobile-logo.png');
-    width: 80px;
+    content: url("Assets/mobile-logo.png");
+    width: 70px;
+    height: auto;
   }
   .log-box h2 {
     color: white;
   }
+  .box input{
+    height: 30px;
+  }
+  .pass-box{
+    height: 30px;
+  }
   .options {
     color: white;
+    font-size: 10px;
   }
   .options a {
     color: white;
+    font-size: 10px;
+    margin-left: 60px;
   }
-  .divider{
+  .divider {
     color: white;
   }
   .footer-text a {
     color: white;
     font-weight: 600;
   }
-  .footer-text{
+  .footer-text {
     color: white;
+    font-size: 11px;
   }
 }
